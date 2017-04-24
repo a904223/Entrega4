@@ -1,0 +1,107 @@
+
+<HTML>
+<HEAD>
+<TITLE> CAMPAIGNS </TITLE>
+<link rel="StyleSheet" type="text/css" href="pattern.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+<script>
+
+function Delete() {
+  var xmlhttp =new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+    document.getElementById("id2").innerHTML=xmlhttp.responseText;
+  }
+}
+xmlhttp.open("GET","Delete",true);
+xmlhttp.send();
+}
+</script>
+
+<script>
+jQuery(function($){
+	$.datepicker.regional['es'] = {
+		closeText: 'Cerrar',
+		prevText: '&#x3c;Ant',
+		nextText: 'Sig&#x3e;',
+		currentText: 'Hoy',
+		monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
+		'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+		monthNamesShort: ['Ene','Feb','Mar','Abr','May','Jun',
+		'Jul','Ago','Sep','Oct','Nov','Dic'],
+		dayNames: ['Domingo','Lunes','Martes','Mi&eacute;rcoles','Jueves','Viernes','S&aacute;bado'],
+		dayNamesShort: ['Dom','Lun','Mar','Mi&eacute;','Juv','Vie','S&aacute;b'],
+		dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','S&aacute;'],
+		weekHeader: 'Sm',
+		dateFormat: 'dd/mm/yy',
+		firstDay: 1,
+		isRTL: false,
+		showMonthAfterYear: false,
+		yearSuffix: ''};
+	$.datepicker.setDefaults($.datepicker.regional['es']);
+});    
+
+        $(document).ready(function() {
+           $("#datepicker").datepicker();
+        });
+</script>
+</HEAD>
+
+
+<BODY>
+
+<div class="header">
+        <img align="left" src="Logo ERP Tecnun.png">
+        <h1 align="center">TECNUN ERP-ADVERTISING CAMPAIGNS</h1>
+    </div>
+    <ul class="navbar">
+        <li class="dropdown">
+            <a class="dropbtn"><font face="Arial">Menu</font></a>
+            <div class="dropdown-content">
+                <a class="active" href="Pedido.html">Orders</a>
+                <a href="customers.html">Customers</a>
+                <a href="producttxt.html">Products</a>
+                <a href="accounting.html">Accounting</a>
+                <a href="bills.html">Bills</a>
+            </div>
+        </li>
+    </ul>
+<p></p>
+<div id=id2 class="right">
+<form class="insertCampaign" method="get" action="JDBCCampaigns" name="asset">
+    &nbsp;
+    <table cellspacing="1" cellpadding="1" border="0" align="center" width="80%" summary="">
+        <tbody>
+			<tr>
+			<td> <b>Insert a new campaign </b></td>
+			</tr>
+            <tr>
+                <td>Name</td>
+                <td align="left"><input type="text" name="Name" size="3" /></td>
+				<td>Method</td>
+                <td align="left"><input type="text" name="Method" size="3" /></td>
+            </tr>
+            <tr>
+                <td>Start date</td>
+                <td align="left"><input type="date" name="StartDate" size="40" /></td>
+				<td>Country</td>
+                <td align="left"><input type="text" name="Country" size="40" /></td>
+            </tr>
+            <tr>
+                <td>End date</td>
+                <td align="left"><input type="date" name="EndDate" size="40" /></td>
+            </tr>
+			
+            <tr>
+                <td colspan="2"><button class="button" type=submit Name=Save>Save</button></td><td colspan="2">
+
+            </tr>
+        </tbody>
+    </table>
+</form>
+<a href="Marketing.html"></a>
+</div>
+
+</BODY>
+</HTML>

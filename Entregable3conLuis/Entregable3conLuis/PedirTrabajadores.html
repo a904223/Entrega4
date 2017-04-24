@@ -1,0 +1,90 @@
+<html>
+
+<head>
+<title>Introduce Workers</title>
+    <link rel="StyleSheet" type="text/css" href="pattern.css">
+    <script type='text/javascript'>
+        function addFields(){
+            var number = document.getElementById("employee").value;
+            var container = document.getElementById("container");
+            while (container.hasChildNodes()) {
+                container.removeChild(container.lastChild);
+            }
+            for (i=0;i<number;i++){
+                container.appendChild(document.createTextNode("Employee " + (i+1)));
+                var input = document.createElement("input");
+                input.type = "text";
+                input.name = "name" + (i+1);
+                container.appendChild(input);
+                // Append a line break 
+                container.appendChild(document.createElement("br"));
+            }
+        }
+    </script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#631818">
+
+    <div class="header">
+        <img align="left" src="Logo ERP Tecnun.png">
+        <h1 align="center">INTRODUCE A DATE</h1>
+    </div>
+    <ul class="navbar">
+            <li class="dropdown-1"><a class="menu" class="dropbtn"><font face="Arial">Menu</font></a>
+                <ul>
+                    <div class="dropdown-content-1">
+                        <li class="dropdown-2"><a class="dropbtn" class="active">Purchases</a>
+                            <ul>
+                            <div class="dropdown-content-2">
+                                <a href="suppliers">Suppliers</a>
+                                <a href="#">New Order</a>
+                                <a href="#">Orders</a>
+                            </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown-2"><a class="dropbtn">Sales</a>
+                            <ul>
+                            <div class="dropdown-content-2">
+                                <a href="customers">Customers</a>
+                                <a href="#">New Order</a>
+                                <a href="#">Orders</a>
+                            </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown-2"><a class="dropbtn">Inventory</a>
+                            <ul>
+                            <div class="dropdown-content-2">
+                                <a href="products">Products</a>
+                                <a href="warehouses">Warehouse</a>
+                            </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown-2"><a class="dropbtn" href="accounting.html">Accounting</a></li>
+                        <li class="dropdown-2"><a class="dropbtn" href="bills.html">Bills</a></li>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+
+    <form method="GET" action="Trabajadores">
+        <BR>
+        <p align="center">
+        <TABLE BORDER="0">                
+            <TR>
+                <TD><font size="3">Year</font></TD>
+                <TD><input type="date" name="date" id="year"></TD>
+            </TR>
+        </TABLE>
+        <p align="center">
+        <input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Delete"></p>
+        </p>
+
+    </form>
+    <p align="center">&nbsp;</p>
+
+
+
+</body>
+
+</html>

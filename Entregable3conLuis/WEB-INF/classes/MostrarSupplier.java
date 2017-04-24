@@ -80,6 +80,7 @@ public class MostrarSupplier extends HttpServlet {
        
     out.println("<HTML>");
     out.println("<HEAD>");
+	out.println("<link rel=\"StyleSheet\" type=\"text/css\" href=\"pattern.css\">");
     out.println("<TITLE>Suppliers Orders</TITLE>");
     out.println("</HEAD>");
     
@@ -87,6 +88,46 @@ public class MostrarSupplier extends HttpServlet {
     out.println("<center>");
     //while (result1.next()){
         //String Customer=result1.getString("Customer");
+			out.println("<div class='header'>");
+            out.println("<img align='left' src='Logo ERP Tecnun.png'>");
+            out.println("<h1 align='center'>ERP TECNUN</h1>");
+        out.println("</div>");
+        out.println("<ul class='navbar'>");
+            out.println("<li class='dropdown-1'><a class='menu' class='dropbtn'><font face='Arial'>Menu</font></a>");
+                out.println("<ul>");
+                    out.println("<div class='dropdown-content-1'>");
+                        out.println("<li class='dropdown-2'><a class='dropbtn' class='active'>Purchases</a>");
+                            out.println("<ul>");
+                            out.println("<div class='dropdown-content-2'>");
+                               out.println(" <a href='suppliers'>Suppliers</a>");
+                                out.println("<a href='Buscador.html'>New Order</a>");
+                                out.println("<a href='MostrarCustomer'>Orders</a>");
+                            out.println("</div>");
+                            out.println("</ul>");
+                        out.println("</li>");
+                        out.println("<li class='dropdown-2'><a class='dropbtn'>Sales</a>");
+                            out.println("<ul>");
+                            out.println("<div class='dropdown-content-2'>");
+                                out.println("<a href='customers'>Customers</a>");
+                                out.println("<a href='BuscadorCustomer.html'>New Order</a>");
+                                out.println("<a href='#'>Orders</a>");
+                            out.println("</div>");
+                            out.println("</ul>");
+                        out.println("</li>");
+                        out.println("<li class='dropdown-2'><a class='dropbtn'>Inventory</a>");
+                            out.println("<ul>");
+                            out.println("<div class='dropdown-content-2'>");
+                                out.println("<a href='products'>Products</a>");
+                                out.println("<a href='warehouses'>Warehouse</a>");
+                            out.println("</div>");
+                            out.println("</ul>");
+                        out.println("</li>");
+                        out.println("<li class='dropdown-2'><a class='dropbtn' href='accounting.html'>Accounting</a></li>");
+                        out.println("<li class='dropdown-2'><a class='dropbtn' href='bills.html'>Bills</a></li>");
+                    out.println("</div>");
+                out.println("</ul>");
+            out.println("</li>");
+        out.println("</ul>");
         
    out.println("<B><font align=\"center\" size=\"7\" color=\"#088A85\" face=\"Calibri\">ORDERS</FONT></B>");
    out.println("<form action=\"Delete\">");

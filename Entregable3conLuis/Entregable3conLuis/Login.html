@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+<TITLE> LOGIN </TITLE>
+<link rel="StyleSheet" type="text/css" href="pattern.css">
+
+</HEAD>
+
+	
+	<script type="text/javascript">
+
+            
+            function checkForm(form) {
+                if(form.usuario.value == "") {
+                    alert("Error: Username cannot be blank!");
+                    form.usuario.focus();
+                    return false;
+                }
+               
+                
+                if(form.passw.value == "") {
+                    alert("Error: password cannot be blank!");
+                    form.usuario.focus();
+                    return false;
+                }		
+			}
+    </script>
+		<!--  <script type="text/javascript">
+            
+            $( function () {
+            $("#boton").click(function(event) {
+                event.preventDefault();
+                var data = $('#form').serializeArray();
+                alert('valor obtenido:' + data);
+                $("#results").empty();
+                jquery.each( data, function( i, field ) {
+                    $("#results").append( field.value + " ");
+                });
+                $.ajax({
+                    type: 'GET',
+                    url: '/CheckPassword',
+                    data: {'pass_actual' : $("#results").eq(1)},
+                    success: function(data) {
+                        alert('Load was performed.');
+                    },
+                    error: function(){
+                        alert('Fuuuuuuuuuuuuuu');
+                    }
+                });
+            });
+            });
+        </script> -->
+<BODY>
+
+ <div class="header">
+        <img align="left" src="Logo ERP Tecnun.png">
+	<img align="right" src="Usuario.png">
+        <h1 align="center">TECNUN ERP</h1>
+    </div>
+
+
+<p align="center">
+
+<TABLE BORDER="0">
+    
+		
+	</tr>
+	<tr>
+				
+	
+
+	<div id="demo">
+        <form action="CheckPassword" id="form" onsubmit="return checkForm(this)">
+            <p align="center">
+            <TABLE BORDER="0">                
+                
+                <TR><div id="id2">
+                    <TD><font size="3">Username</font></TD>
+                    <TD><input type="input" name="usuario" id="pass_actual" ></TD>
+                </div></TR>
+				<TR><div id="id3">
+                    <TD><font size="3">Password</font></TD>
+                    <TD><input type="password" name="passw" id="pass_nueva1" ></TD>
+                </div></TR>
+              
+              
+            </TABLE>
+            <p align="center">
+            <input type="submit" value="Submit" id="boton">&nbsp;&nbsp;&nbsp;
+           
+            </p>
+        </form>
+        </div>
+
+    
+    <p align="center">&nbsp;</p>
+	<CENTER>
+<BR><a href="SignUp.html">New user?</a>
+<a href="PasswordChange.html">Change Password</a>
+<a href="ForgetPass.html">Forget Password?</a>
+</CENTER>
+</BODY>
+</HTML>
+
+

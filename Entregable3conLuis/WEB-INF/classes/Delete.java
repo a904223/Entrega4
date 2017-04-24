@@ -63,23 +63,12 @@ public class Delete extends HttpServlet {
 
     PrintWriter out = null;
     try {
+		resp.sendRedirect("Buscador.html");
       out=resp.getWriter();
     } catch (IOException io) {
       System.out.println("There has been an exception");    
     }
-        
-    out.println("<HTML>");
-    out.println("<HEAD>");
-    out.println("<TITLE>Orders</TITLE>");
-    out.println("<link rel=\"Stylesheet\" type=\"text/css\" href=\"pattern.css\">");
-    out.println("</HEAD>");
-    out.println("<BODY background=\"gris.jpg\">");
-    out.println("<div class=\"header\"><img align=\"left\" src=\"Logo ERP Tecnun.png\"><h1 align=\"center\">ACCOUNTING - Staff</h1></div><ul class=\"navbar\"><li class=\"dropdown\"><a class=\"dropbtn\"><font face=\"Arial\">Menu</font></a><div class=\"dropdown-content\"><a class=\"active\" href=\"Pedido.html\">Orders</a><a href=\"customers.html\">Customers</a><a href=\"producttxt.html\">Products</a><a href=\"accounting.html\">Accounting</a><a href=\"bills.html\">Bills</a></div></li></ul>");
-    out.println("<center>");
-    out.println("<B><font size=\"7\" color=\"#088A85\" face=\"Calibri\">THE ORDER HAS BEEN DELETED</FONT></B>");
-    out.println("</BODY>");
-    out.println("<BR><a href=\"Pedido.html\">Back to menu</a>");
-    out.println("</center>");
+ 
     
    
 

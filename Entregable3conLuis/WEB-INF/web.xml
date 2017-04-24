@@ -274,6 +274,54 @@
   <servlet-name>buscarorder</servlet-name>
   <servlet-class>buscarorder</servlet-class>
 </servlet>
+<servlet>
+  <servlet-name>busqueda_customers</servlet-name>
+  <servlet-class>busqueda_customers</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>busqueda_customers2</servlet-name>
+  <servlet-class>busqueda_customers2</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>saveCustomer</servlet-name>
+  <servlet-class>saveCustomer</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>busqueda_customers3</servlet-name>
+  <servlet-class>busqueda_customers3</servlet-class>
+</servlet>
+
+
+<servlet>
+  <servlet-name>searchCustomerOrders</servlet-name>
+  <servlet-class>searchCustomerOrders</servlet-class>
+</servlet>
+
+
+
+<servlet-mapping>
+  <servlet-name>searchCustomerOrders</servlet-name>
+  <url-pattern>/searchCustomerOrders</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>
+  <servlet-name>saveCustomer</servlet-name>
+  <url-pattern>/saveCustomer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>busqueda_customers</servlet-name>
+  <url-pattern>/busqueda_customers</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+  <servlet-name>busqueda_customers2</servlet-name>
+  <url-pattern>/busqueda_customers2</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+  <servlet-name>busqueda_customers3</servlet-name>
+  <url-pattern>/busqueda_customers3</url-pattern>
+</servlet-mapping>
 	
 			<servlet-mapping>
   <servlet-name>CheckPassword</servlet-name>

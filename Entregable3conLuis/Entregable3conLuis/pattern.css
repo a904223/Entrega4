@@ -1,0 +1,238 @@
+body {
+    font-family: Georgia, "Times New Roman",
+        Times, serif;
+    background-color: #D9D9D9
+    }
+	.table {     font-family: Georgia, "Times New Roman",
+        Times, serif; 
+    font-size: 12px;    margin: auto;     width: 480px; text-align: center;    border-collapse: collapse; }
+
+.th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
+    border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039; }
+
+.td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid #fff;
+    color: #669;    border-top: 1px solid transparent; }
+	.boton{
+		text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+		text-align:center;
+		text-decoration: none;
+		font-family: Georgia, "Times New Roman",
+		Times, serif;
+		display:inline-block;
+		color: #FFF;
+		background: #7F8C8D;
+		padding: 7px 20px;
+		white-space: nowrap;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 100px;
+		margin: 10px 5px;
+		-webkit-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+}
+
+   
+
+.grisn{
+  background: ##1C1C1C;
+  box-shadow: 0px 5px 0px 0px #000000;
+}
+
+.grisn:hover{
+  background: ##1C1C1C;
+}
+
+.grisn:active{
+  box-shadow: 0px 2px 0px 0px #000000;
+}
+div.d_boton {
+float: right;
+margin-right: 250px;
+}
+
+
+.tr:hover td { background: #d0dafd; color: #339; }
+   
+    
+    .header {
+    background-color:white;
+    color:red;
+    height:120px;
+    width:100%;
+    }
+	
+	.tableCampaigns {
+	table-layout:fixed;
+	margin-left: 200px;
+	}
+	
+	td, tr {
+	margin-left:200px;
+	height:50px;
+	width:200px;
+	}	
+	
+	.button {
+	margin-left:none;
+    padding: 15px 35px;
+	background-color: #008CBA;
+	border:none;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:12px;
+	border-radius:15px;
+ }
+ 
+	 .statistic {
+	margin-top:20px;
+	margin-left:200px;
+	height:300px;
+	width:500px;
+	 }
+	 .nounderline {
+		 text-decoration:none;
+	 }
+	.right {
+		margin-left:200px;
+	}
+ 
+	.button4 {
+	margin-left: 200px;
+	margin-bottom:15px;
+    background-color: #e7e7e7;
+    border: 5px solid white;
+    color: black;
+	width: 280px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+	
+	.button4:hover {
+		background-color: white;
+		color: white;
+	}
+    
+    ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 1em;
+    width: 10em }
+	
+	.insertCampaign {
+	margin-left=200px;
+	}
+
+	
+    li a:hover {
+                background-color: #DEB887;
+            }
+    li.dropdown-1 {
+                display: inline-block;
+                width:150px;
+            }
+            
+    li.dropdown-2 {
+                display: inline-block;
+                width:150px;
+            }
+    
+    .dropdown-content-1 {
+        display: none;
+        position: absolute;
+        background-color: #FFF;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    .dropdown-content-2 {
+        display: none;
+        position: absolute;
+        background-color: #FFF;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+
+    .dropdown-content-1 a {
+        color: #33B809;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content-2 a {
+        color: #33B809;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .dropdown-content-1 a:hover {
+        background-color: #DEB887
+    }
+    
+    .dropdown-content-2 a:hover {
+        background-color: #DEB887
+    }
+
+    .dropdown-1:hover .dropdown-content-1 {
+        display: block;
+    }
+    
+    .dropdown-2:hover .dropdown-content-2 {
+        display: block;
+    }
+            
+    .active {
+                background-color: #DEB887;
+            }
+
+    h1 {
+    font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif ;
+    color: #FF0000;
+    }
+        
+    ul.navbar  {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-right: 0.3em solid black 
+    }
+
+    ul.navbar a {
+    text-decoration: none }
+
+    a:link {
+    color: blue }
+
+    a:visited {
+    color: purple }
+    
+    img{
+    height:100px;
+    width:180px;
+    align: left;
+
+    }
+    
+    
+    
+    
+    
+   
