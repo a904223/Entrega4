@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<TITLE> Marketing Menu </TITLE>
+<link rel="StyleSheet" type="text/css" href="pattern.css">
+
+</HEAD>
+<script>
+
+function ShowBestseller() {
+  var xmlhttp =new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+    document.getElementById("id2").innerHTML=xmlhttp.responseText;
+  }
+}
+xmlhttp.open("GET","JDBCBestseller",true);
+xmlhttp.send();
+}
+</script>
+
+<BODY>
+
+<div class="header">
+        <img align="left" src="Logo ERP Tecnun.png">
+        <h1 align="center">ACCOUNTING-Marketing</h1>
+    </div>
+    <ul class="navbar">
+        <li class="dropdown">
+            <a class="dropbtn"><font face="Arial">Menu</font></a>
+            <div class="dropdown-content">
+                <a class="active" href="Pedido.html">Orders</a>
+                <a href="customers.html">Customers</a>
+                <a href="producttxt.html">Products</a>
+                <a href="accounting.html">Accounting</a>
+                <a href="bills.html">Bills</a>
+            </div>
+        </li>
+    </ul>
+<BR></BR>
+<div id=id2>
+<button class="button" onclick=ShowBestseller()> Bestseller </button>
+</div>
+<BR></BR>
+
+
+
+</BODY>
+</HTML>

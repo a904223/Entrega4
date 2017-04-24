@@ -1,0 +1,323 @@
+﻿<HTML>
+    <HEAD>
+        <TITLE> INDEX</TITLE>
+    </HEAD>
+    
+    <BODY background="gris.jpg" >    
+    <table>
+        <tr>
+	<B> Luis Segurola de la Hoz has made the following functions:</B>
+	<p></p>
+ 
+    <a href="Pedido.html">Function1(ADD ORDER)</a>
+    <P>-</P>
+    <tr><a href="MostrarCustomer">Function2(SEE ACTUAL ORDERS)</a></tr>
+    <P> -</P>
+    <tr><a href="MostrarCustomer">Function3(SEARCH THE ORDER)</a>
+    <P> PUT THE NAME OF THE FUNCTION AT THE BAR AND CLICK BUSCAR<P/>
+    <a href="MostrarCustomer">Function4(MODIFY ORDERS)</a><P>
+    CLICK ON MODIFY, THEN MODIFY WHAT EVER YOU WANT EXCEPT ID AND CLICK SAVE</p></tr>
+    <a href="MostrarCustomer">Function5(DELETE THE ORDER)</a> 
+    <P>CLICK ON DELETE TO DELETE THE ORDER</P>
+    <a href="SignUp.html">Function6(SIGN UP)</a>
+    <P> -</P>
+    <tr>
+	<B>Sofia Herrador Asenjo has made the following functions: </B>
+	
+	<p></p>
+	<tr>
+	<p></p>
+    <a href="Login.html">Login</a>
+    <p> NAME: Login: links to sign up, forgotten account </p>
+    <p> SHORT DESCRIPTION: <ul> <li> The user will be able to enter into the application</p>
+	<p>you need to insert the data and press Submit. If there is ane input not filled it will show a message. If the user or password is incorrect, it will show an error. It is made by AJAX and connected to the database</p>
+	
+	<p>EXPLANATION: It is the first page of the application. The correct data to insert is : username=fff, password=fff. The servlet linked with the html is CheckPassword.</p>
+    </tr>
+    <tr>
+	<p></p>
+    <a href="Amortization.html">Amortization</a>
+    <p> NAME: Amortization: show all the assets, introduce new assets and see total amortize </p>
+    
+    <p> SHORT DESCRIPTION: <ul>  The link will take you to a html where there are 3 buttons: </p>
+	<li><p>1st button: It will show you all the assets that the comany has with the most important information (name, year of purchase and initial prize). It is connected by AJAX with the database</p>
+	</li>
+	<li><p>2nd button: Here you can introduce a new asset. If there is not any input filled, there will appear a message to fill it. It is made with AJAX, JAVASCRIPT and connected to the database </p>
+	</li>
+	<li><p>3rd button: It will show you the total amortized by the assets of the company in the last year. It is connected by AJAX with the database</p>
+	</li></ul>  
+    <p>EXPLANATION: In the accounting index go to Amortization, there press the buttons (it will show the information explain in the same bottom).Later introduce the information that it says. In second buttom (Introduce) the information that I recommend to write is: Machine A, 2006, 20, 500000. The servlets linked with the html are Insertar, MostrarAssets and total.</p>
+    </tr>
+    <tr>
+	<p></p>
+    <a href="IncomeStatement.html">Income Statement</a>
+    <p> NAME: Income Statement: See net Income of last year, See net income during the selected period</p>
+    <p> SHORT DESCRIPTION: <ul> <li> The link will take you to a html where there are 2 buttons: </p>
+	<li><p>1st button: It will show you Net Income of last year (in this case 2017). It is connected by AJAX with the database</p>
+	</li>
+	<li><p>2nd button: Here you can see the net income betwwen 2 dates. First you need to select the 2 dates, if there is not any input filled, there will appear a message to fill it. It is made with Ajax and connected to the Database </p>
+    </li>
+	</li></ul>  
+	<p>EXPLANATION: In the accounting index go to Income Statement, there press the buttons (it will show the information explain in the same bottom).Later introduce the information that it says. In second buttom (Introduce) the dates that I recommend to select are: 1/03/2017 and 30/04/2017. The servlets linked with the html are MostrarIncomeStatement and TotalIncome.</p>
+    </tr>
+    <tr>
+	<p></p>
+	<tr>
+	<p></p>
+    
+   
+    <B>Aitor Aguirrebeña Ollo has made the following function: </B><br/><br/>
+    <tr><p></p>
+    <a href="PedirTrabajadores.html">Trabajadores</a>
+    <p>NAME: Trabajadores : a working shift timetable.
+    <p> AUTHOR: Aitor Aguirrebeña Ollo </p>
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+    This function will allow the user to check each employee's work shifts and also to add off days if required.
+
+    </li>
+    </ul>
+    <p> Introduce the following date to test it: <b>08/03/2017 </b>
+    <p>EXPLANATION: When the user accesses the PedirTrabajadores.html form, it will be required to introduce a date. Once this is done, the servlet will get those values and print an interactive work shift table, by clicking 
+       the submit button and will print a calendar with the employees' working shifts, by getting them from the database. Only a week will be printed, so that all the shifts can fit. There is a draggable button to set a day or days off, which by dropping it on a certain day it automatically updates the work shift.
+       Drag and drop the Day Off to change the Database information, sending a request to the servlet Save_Shifts, via AJAX and getting the response.
+    </p>
+    This whole functionality includes two functions:
+    <ul>
+        <li><b>Trabajadores:</b> it prints the shifts and the calendar.</li>
+        <li><b>Save_Shifts:</b> once the "Day Off" drop off is done, it inserts in the database the selected day, and it sets it off for the chosen employee.</li>
+    </ul>
+    </tr>
+    <tr><a href="ShowInfoEmployees">Show Information about Employees</a>
+    <p>NAME: ShowInfoEmployees : a table showing information about the working force in the company and giving the chance to change it.
+    <p> AUTHOR: Aitor Aguirrebeña Ollo </p>
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+    This function will show a table with all the information about the employees, stored in the Database. It also allows the user to change the information, and save it back in the DB.
+
+    </li>
+    </ul>
+    <p>EXPLANATION: When the user clicks on the menu Accounting/Staff/Employees the ShowInfoEmployees function, the information in the DB will be displayed in a table. There is a button, to modify the information, which displays inpunts in order to modify the actual information. Once this is done, the Save button will save the modified data to the DB, sending it to the servlet Save_InfoEmployees via AJAX.
+    </p>
+    This whole functionality includes two functions:
+    <ul>
+        <li><b>ShowInfoEmployees:</b> it prints the data in the table.</li>
+        <li><b>Save_InfoEmployees:</b> once the information is modified this function will save it in the DB.</li>
+    </ul>
+    </tr>
+    <tr><a href="PasswordChange.html">Change the Password</a>
+    <p>NAME: PasswordChange : a function used to change the password.
+    <p> AUTHOR: Aitor Aguirrebeña Ollo </p>
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+    This function will allow the user to change the password.
+
+    </li>
+    </ul>
+    <p>EXPLANATION: The html called PasswordChange.html shows a form with the username, actual password and new password fields. The user will be required to fill its username first. Then, the actual password will be required, the one used before changing. Lastly, the new password will be requested. I have added some JAVASCRIPT code, to check both new passwords are the same, and to check that the new passwords contain a UPPERCASE LETTER, LOWERCASE LETTER, and ath least some numbers.
+    Last but not least, if all the requirements are fullfilled, it updates the old password with the new one in the DB.
+    </p>
+    This whole functionality includes one function:
+    <ul>
+        <li><b>PasswordChange:</b> it modifies the password writing it in the DB.</li>
+    </ul>
+    </tr>
+     <tr><a href="Buscador.html">Search</a>
+    <p>NAME: busqueda_clientes : a function used to show suggestions while searching.
+    <p> AUTHOR: Aitor Aguirrebeña Ollo </p>
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+    This function will show the user some suggestions while characters are being typed.
+
+    </li>
+    </ul>
+    <p> Introduce the following date to test it: <b>"a" character </b>
+    <p>EXPLANATION: This is part of a search engine implemented in orders. The busqueda_clientes was developed by me, while busqueda_clientes2 and busqueda_clientes3 were developed by other team members. 
+    What it does, while we are in Buscador.html, is to get the character value inserted inside the input on each key-up, and send it as a request to the servlet busqueda_clientes, via AJAX.
+    </p>
+    This whole functionality includes one function:
+    <ul>
+        <li><b>busqueda_clientes:</b> it shows suggestions while the user is typing down.</li>
+    </ul>
+    </tr>
+<tr>
+	<B> Iñigo Barinaga Askasibar has made the following functions:</B>
+	<p></p>
+    <a href="Buscador.html">Function insert supplier orders</a>
+    <p> NAME: insert order
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+    this is the function that includes most of the following functions. 
+    </li>
+    </ul>
+    <p>EXPLANATION:It will enable us to insert a new order to our suppliers. We will have to fill the information of the form. First of all the information relative to the supplier, and then, the information about the products we are wondering to order to the supplier. 
+    </p>
+    </tr>
+    <tr>
+    <a href="Buscador.html">Function fill the gaps relative to the supplier </a>
+    <p> NAME: Fill the information of the supplier in the order</p>
+	<p> We recommend writing and "a" to start selecting the supplier.</p>
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+    The function automatically fills the information of the supplier when we click on the supplier we want
+    </li>
+    </ul>
+    <p>EXPLANATION:First of all, with the function Aitor developed, we will obtain the suppliers containg the letter or group of letters the user has written. This would appear in a div, and after clicking on the supplier we want, we will call an <B>ajax</B> function using <B>JQuery</B> that will again call to a java file( <B>busqueda_clientes2</B>) that would find the information of this customer, this is, his CIF, Telephone and Email. We also have to date type inputs concerning the accounting date and the delivery date. 
+    </p>
+    </tr>
+	<tr>
+    <a href="Buscador.html">Function load the products of the supplier</a>
+    <p> NAME: Load the products the supplier we have chosen offers</p>
+	
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+    The function automatically fills the information of the products our supplier offers when we click on the supplier we want
+    </li>
+    </ul>
+    <p>EXPLANATION:As in the previous function, we will select a supplier. After that, againj using Jquery and Ajax the information of the products offered will automatically be showed. To do so, in the Java file we call we will see how many products the supplier has and we would have the same number of rows as of products, this way, we always can order all the products of our supplier. 
+    </p>
+    </tr>
+	<tr>
+	 <a href="Buscador.html">Function load the price of the products of the supplier</a>
+    <p> NAME: Load the price of the products the supplier we have chosen offers and calculate the total price when choosing a quantity</p>
+	
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+    The function automatically fills the information of the price of the products our supplier offers when we click on the product we want from the options.
+    </li>
+    </ul>
+    <p>EXPLANATION: the information of the price of the products offered will automatically be showed. To do so, in the Java file we call we will look up for the uint price of each product. Again with ajax, always in the "Buscador.html", the information will be loaded. We also have the opportunity to select the quantity we want of each product. With javascript, we will calculate at the moment the total price and it will be shown to the user.
+    </p>
+    </tr>
+	<tr>
+	 <a href="Marketing.html">Function Show previous campaigns</a>
+    <p> NAME: ShowPreviousCampaigns</p>
+	
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+	It shows the advertising campaigns previously made by the company
+    </li>
+    </ul>
+    <p>EXPLANATION: The function searchs the campaigns in the database and they are shown them in a table
+    </p>
+    </tr>
+	<tr>
+	 <a href="Buscador.html">Function save</a>
+    <p> NAME: Saves the information of the order</p>
+	
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+		It is a button that saves the information of the order
+    </li>
+    </ul>
+    <p>EXPLANATION: We must save the information in a couple of tables because we never know the number of products we might have to save. 
+    </p>
+    </tr>
+	<tr>
+	 <a href="Buscador.html">Function show previous orders</a>
+    <p> NAME: shows the information of the previous orders</p>
+	
+
+    <p>EXPLANATION: It shows the information of the order, the customer and the products, taking from different tables the information that is related. 
+    </p>
+    </tr>
+	<tr>
+	 <a href="Buscador.html">Function look for an OrderID</a>
+    <p> NAME: Finds and shows all the information of a concrete orderID</p>
+	
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+    Finds the the information of an OrderID. Example: <B>5</B>
+    </li>
+    </ul>
+    <p>EXPLANATION: When we enter the OrderId it will find and fill of the gaps of the order, showing us all we needed abaut that concrete order.
+    </p>
+    </tr>
+	<tr>
+	<B> Mikel Arzallus Marco has made the following functions:</B>
+	<p></p>
+    <a href="bills.html">Function insert and deploy Invoices</a>
+    <p> NAME: Invoices
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+	 You are able to see all the Invoices that the company has sent or received. You are also able to add new invoices. 
+    </li>
+    </ul>
+    <p>EXPLANATION:You have a button with the name of the customer or supplier in the section "bills". Clicking on it will deploy a small screen with information about the invoice. 
+    </p>
+    </tr>
+    <tr>
+    <a href="products">Function deploy, insert, modify and sort products</a>
+    <p> NAME: Products
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+	 You are able to see, insert new products or modify the information of the products in the database. You are also able to sort the table to search for an specific product.
+    </li>
+    </ul>
+    <p>EXPLANATION:In the main screen you will see all the products in a table. In the top you will have a search bar which will allow you to sort the table. Under the table you will find two hyperlinks, New Product and Modify Product. These two buttons will allow you to introduce new products to the database and to modify the existing Products. 
+    </p>
+    </tr>
+	<tr>
+    <a href="warehouses">Function deploy, insert, modify and sort warehouses</a>
+    <p> NAME: Warehouses
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+	 You are able to see, insert new warehouses and modify the information of the warehouses in the database. You are also able to sort the table to search for an specific warehouse.
+    </li>
+    </ul>
+    <p>EXPLANATION:In the main screen you will see all the warehouses in a table. In the top you will have a search bar which will allow you to sort the table. Under the table you will find two hyperlinks, New Warehouse and Modify Warehouses. These two buttons will allow you to introduce new Warehouses to the database and to modify the existing Warehouses. 
+    </p>
+    </tr>
+	<tr>
+    <a href="customers">Function deploy, insert, modify and sort customers</a>
+    <p> NAME: Customers
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+	 You are able to see, insert new customers or modify the information of the customers in the database. You are also able to sort the table to search for an specific customer.
+    </li>
+    </ul>
+    <p>EXPLANATION:In the main screen you will see all the customer in a table. In the top you will have a search bar which will allow you to sort the table. Under the table you will find two hyperlinks, New Customer and Modify Customer. These two buttons will allow you to introduce new customers to the database and to modify the existing customers. 
+    </p>
+    </tr>
+	<tr>
+    <a href="suppliers">Function deploy, insert, modify and sort suppliers</a>
+    <p> NAME: Suppliers
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+	 You are able to see, insert new suppliers or modify the information of the suppliers in the database. You are also able to sort the table to search for an specific supplier.
+    </li>
+    </ul>
+    <p>EXPLANATION:In the main screen you will see all the suppliers in a table. In the top you will have a search bar which will allow you to sort the table. Under the table you will find two hyperlinks, New Supplier and Modify Supplier. These two buttons will allow you to introduce new suppliers to the database and to modify the existing Suppliers. 
+    </p>
+    </tr>
+	<tr>
+    <a href="ForgetPass.html">Function recover Password</a>
+    <p> NAME: Recover Password
+    <p>SHORT DESCRIPTION:</p>
+    <ul>
+    <li>
+	It will allow you to recover your account if you have forgotten your Password. You will have to answer to your security question correctly in order to recover your account.
+    </li>
+    </ul>
+    <p>EXPLANATION:You will have to enter a mail already in use in the database (arzallusm@gmail.com), and the following screen will ask you the security question. If you answer to this question correctly (Donosti), the programm will generate a new password randomly for you to access to your account. If your answer is incorrect (try with "no"), you wil receive an error message and you will have to go back to the login screen. 
+    </p>
+    </tr>
+    </BODY>
+</HTML>
+    

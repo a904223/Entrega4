@@ -1,0 +1,562 @@
+<web-app>
+    <servlet>
+        <servlet-name>MostrarCustomer</servlet-name>
+        <servlet-class>MostrarCustomer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Delete</servlet-name>
+        <servlet-class>Delete</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Delete1</servlet-name>
+        <servlet-class>Delete1</servlet-class>
+    </servlet>
+    <servlet>
+
+        <servlet-name>MisAlquileres</servlet-name>
+        <servlet-class>MisAlquileres</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ModificarPedido</servlet-name>
+        <servlet-class>ModificarPedido</servlet-class>
+    </servlet>
+
+	<servlet>
+        <servlet-name>GuardarModificacion</servlet-name>
+        <servlet-class>GuardarModificacion</servlet-class>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>Reserva</servlet-name>
+        <servlet-class>Reserva</servlet-class>
+    </servlet>
+
+<servlet>
+  <servlet-name>IntroducirPedido</servlet-name>
+  <servlet-class>IntroducirPedido</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>JDBCCampaigns</servlet-name>
+  <servlet-class>JDBCCampaigns</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>JDBCBestseller</servlet-name>
+  <servlet-class>JDBCBestseller</servlet-class>
+</servlet>
+
+
+<servlet>
+  <servlet-name>MostrarAssets</servlet-name>
+  <servlet-class>MostrarAssets</servlet-class>
+</servlet>
+
+ <servlet>
+        <servlet-name>Trabajadores</servlet-name>
+        <servlet-class>Trabajadores</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>total</servlet-name>
+        <servlet-class>total</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Insertar</servlet-name>
+        <servlet-class>Insertar</servlet-class>
+    </servlet>
+	
+	    <servlet>
+        <servlet-name>EnvioCorreo</servlet-name>
+        <servlet-class>EnvioCorreo</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>Comprobacion</servlet-name>
+        <servlet-class>Comprobacion</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>cambio</servlet-name>
+        <servlet-class>cambio</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>warehouses</servlet-name>
+        <servlet-class>warehouses</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>NewWarehouse</servlet-name>
+        <servlet-class>NewWarehouse</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>ModifyWarehouse</servlet-name>
+        <servlet-class>ModifyWarehouse</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>ModWarehouse</servlet-name>
+        <servlet-class>ModWarehouse</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>UpdateWarehouse</servlet-name>
+        <servlet-class>UpdateWarehouse</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>customers</servlet-name>
+        <servlet-class>customers</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>NewCustomer</servlet-name>
+        <servlet-class>NewCustomer</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>ModifyCustomer</servlet-name>
+        <servlet-class>ModifyCustomer</servlet-class>
+    </servlet>
+	
+		<servlet>
+        <servlet-name>ModCustomer</servlet-name>
+        <servlet-class>ModCustomer</servlet-class>
+    </servlet>
+	
+			<servlet>
+        <servlet-name>UpdateCustomer</servlet-name>
+        <servlet-class>UpdateCustomer</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>busqueda_clientes</servlet-name>
+        <servlet-class>busqueda_clientes</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>suppliers</servlet-name>
+        <servlet-class>suppliers</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>NewSupplier</servlet-name>
+        <servlet-class>NewSupplier</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>ModifySupplier</servlet-name>
+        <servlet-class>ModifySupplier</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>ModSupplier</servlet-name>
+        <servlet-class>ModSupplier</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>UpdateSupplier</servlet-name>
+        <servlet-class>UpdateSupplier</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>products</servlet-name>
+        <servlet-class>products</servlet-class>
+    </servlet>
+	
+		<servlet>
+        <servlet-name>NewProduct</servlet-name>
+        <servlet-class>NewProduct</servlet-class>
+    </servlet>
+	
+		<servlet>
+        <servlet-name>ModProduct</servlet-name>
+        <servlet-class>ModProduct</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>ModifyProduct</servlet-name>
+        <servlet-class>ModifyProduct</servlet-class>
+    </servlet>
+	
+		<servlet>
+        <servlet-name>UpdateProduct</servlet-name>
+        <servlet-class>UpdateProduct</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>supplierssorted</servlet-name>
+        <servlet-class>supplierssorted</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>customerssorted</servlet-name>
+        <servlet-class>customerssorted</servlet-class>
+    </servlet>
+	
+		<servlet>
+        <servlet-name>warehousessorted</servlet-name>
+        <servlet-class>warehousessorted</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>productssorted</servlet-name>
+        <servlet-class>productssorted</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>CheckPassword</servlet-name>
+        <servlet-class>CheckPassword</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>PasswordChange</servlet-name>
+        <servlet-class>PasswordChange</servlet-class>
+    </servlet>
+	
+		<servlet>
+        <servlet-name>signup</servlet-name>
+        <servlet-class>signup</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>ShowInfoEmployees</servlet-name>
+        <servlet-class>ShowInfoEmployees</servlet-class>
+    </servlet>
+	
+	<servlet>
+  <servlet-name>ShowPreviousCampaigns</servlet-name>
+  <servlet-class>ShowPreviousCampaigns</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>busqueda_clientes2</servlet-name>
+  <servlet-class>busqueda_clientes2</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>save</servlet-name>
+  <servlet-class>save</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>busqueda_clientes3</servlet-name>
+  <servlet-class>busqueda_clientes3</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>MostrarSupplier</servlet-name>
+  <servlet-class>MostrarSupplier</servlet-class>
+</servlet>
+
+<servlet>
+  <servlet-name>search</servlet-name>
+  <servlet-class>search</servlet-class>
+</servlet>
+	
+
+	
+	<servlet>
+  <servlet-name>TotalIncome</servlet-name>
+  <servlet-class>TotalIncome</servlet-class>
+</servlet>
+ <servlet>
+  <servlet-name>MostrarIncomeStatement</servlet-name>
+  <servlet-class>MostrarIncomeStatement</servlet-class>
+</servlet>
+
+<servlet>
+        <servlet-name>Save_InfoEmployees</servlet-name>
+        <servlet-class>Save_InfoEmployees</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>Save_Shifts</servlet-name>
+        <servlet-class>Save_Shifts</servlet-class>
+    </servlet>
+	<servlet>
+  <servlet-name>buscarorder</servlet-name>
+  <servlet-class>buscarorder</servlet-class>
+</servlet>
+	
+			<servlet-mapping>
+  <servlet-name>CheckPassword</servlet-name>
+  <url-pattern>/CheckPassword</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>search</servlet-name>
+  <url-pattern>/search</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>
+  <servlet-name>MostrarSupplier</servlet-name>
+  <url-pattern>/MostrarSupplier</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>save</servlet-name>
+  <url-pattern>/save</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>busqueda_clientes</servlet-name>
+  <url-pattern>/busqueda_clientes</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+  <servlet-name>busqueda_clientes2</servlet-name>
+  <url-pattern>/busqueda_clientes2</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+  <servlet-name>busqueda_clientes3</servlet-name>
+  <url-pattern>/busqueda_clientes3</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+  <servlet-name>ShowPreviousCampaigns</servlet-name>
+  <url-pattern>/ShowPreviousCampaigns</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>
+        <servlet-name>ShowInfoEmployees</servlet-name>
+        <url-pattern>/ShowInfoEmployees</url-pattern>
+    </servlet-mapping>
+
+<servlet-mapping>
+        <servlet-name>Save_InfoEmployees</servlet-name>
+        <url-pattern>/Save_InfoEmployees</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>Save_Shifts</servlet-name>
+        <url-pattern>/Save_Shifts</url-pattern>
+    </servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>signup</servlet-name>
+  <url-pattern>/signup</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>PasswordChange</servlet-name>
+  <url-pattern>/PasswordChange</url-pattern>
+</servlet-mapping>
+	
+		<servlet-mapping>
+  <servlet-name>warehousessorted</servlet-name>
+  <url-pattern>/warehousessorted</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>productssorted</servlet-name>
+  <url-pattern>/productssorted</url-pattern>
+</servlet-mapping>
+	
+	<servlet-mapping>
+  <servlet-name>customerssorted</servlet-name>
+  <url-pattern>/customerssorted</url-pattern>
+</servlet-mapping>
+
+		<servlet-mapping>
+  <servlet-name>NewProduct</servlet-name>
+  <url-pattern>/NewProduct</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>TotalIncome</servlet-name>
+  <url-pattern>/TotalIncome</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+  <servlet-name>MostrarIncomeStatement</servlet-name>
+  <url-pattern>/MostrarIncomeStatement</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>supplierssorted</servlet-name>
+  <url-pattern>/supplierssorted</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>UpdateProduct</servlet-name>
+  <url-pattern>/UpdateProduct</url-pattern>
+</servlet-mapping>
+
+		<servlet-mapping>
+  <servlet-name>ModProduct</servlet-name>
+  <url-pattern>/ModProduct</url-pattern>
+</servlet-mapping>
+
+	<servlet-mapping>
+  <servlet-name>ModifyProduct</servlet-name>
+  <url-pattern>/ModifyProduct</url-pattern>
+</servlet-mapping>
+	
+	<servlet-mapping>
+  <servlet-name>UpdateSupplier</servlet-name>
+  <url-pattern>/UpdateSupplier</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>products</servlet-name>
+  <url-pattern>/products</url-pattern>
+</servlet-mapping>
+	
+	<servlet-mapping>
+  <servlet-name>ModCustomer</servlet-name>
+  <url-pattern>/ModCustomer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>NewSupplier</servlet-name>
+  <url-pattern>/NewSupplier</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>ModifySupplier</servlet-name>
+  <url-pattern>/ModifySupplier</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>ModSupplier</servlet-name>
+  <url-pattern>/ModSupplier</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>suppliers</servlet-name>
+  <url-pattern>/suppliers</url-pattern>
+</servlet-mapping>
+
+
+
+	<servlet-mapping>
+  <servlet-name>UpdateCustomer</servlet-name>
+  <url-pattern>/UpdateCustomer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>Insertar</servlet-name>
+  <url-pattern>/Insertar</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>ModifyCustomer</servlet-name>
+  <url-pattern>/ModifyCustomer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>NewCustomer</servlet-name>
+  <url-pattern>/NewCustomer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>customers</servlet-name>
+  <url-pattern>/customers</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>ModifyWarehouse</servlet-name>
+  <url-pattern>/ModifyWarehouse</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>ModWarehouse</servlet-name>
+  <url-pattern>/ModWarehouse</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>UpdateWarehouse</servlet-name>
+  <url-pattern>/UpdateWarehouse</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>warehouses</servlet-name>
+  <url-pattern>/warehouses</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>NewWarehouse</servlet-name>
+  <url-pattern>/NewWarehouse</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>cambio</servlet-name>
+  <url-pattern>/cambio</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>EnvioCorreo</servlet-name>
+  <url-pattern>/EnvioCorreo</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>Comprobacion</servlet-name>
+  <url-pattern>/Comprobacion</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>GuardarModificacion</servlet-name>
+  <url-pattern>/GuardarModificacion</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>JDBCCampaigns</servlet-name>
+  <url-pattern>/JDBCCampaigns</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>total</servlet-name>
+  <url-pattern>/total</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>JDBCBestseller</servlet-name>
+  <url-pattern>/JDBCBestseller</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>IntroducirPedido</servlet-name>
+  <url-pattern>/IntroducirPedido</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet-mapping>
+  <servlet-name>MostrarAssets</servlet-name>
+  <url-pattern>/MostrarAssets</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+        <servlet-name>Trabajadores</servlet-name>
+        <url-pattern>/Trabajadores</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MisAlquileres</servlet-name>
+        <url-pattern>/MisAlquileres</url-pattern>
+    </servlet-mapping>
+
+
+    
+    <servlet-mapping>
+        <servlet-name>Reserva</servlet-name>
+        <url-pattern>/Reserva</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ModificarPedido</servlet-name>
+        <url-pattern>/ModificarPedido</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MostrarCustomer</servlet-name>
+        <url-pattern>/MostrarCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Delete</servlet-name>
+        <url-pattern>/Delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Delete1</servlet-name>
+        <url-pattern>/Delete1</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>buscarorder</servlet-name>
+        <url-pattern>/buscarorder</url-pattern>
+    </servlet-mapping>
+</web-app>

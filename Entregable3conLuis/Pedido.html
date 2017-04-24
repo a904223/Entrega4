@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<TITLE> ORDERS</TITLE>
+<link rel="StyleSheet" type="text/css" href="pattern.css">
+
+
+</HEAD>
+<body background="gris.jpg">
+        <div class="header">
+            <img align="left" src="Logo ERP Tecnun.png">
+            <h1 align="center">ERP TECNUN</h1>
+        </div>
+        <ul class="navbar">
+            <li class="dropdown-1"><a class="menu" class="dropbtn"><font face="Arial">Menu</font></a>
+                <ul>
+                    <div class="dropdown-content-1">
+                        <li class="dropdown-2"><a class="dropbtn" class="active">Purchases</a>
+                            <ul>
+                            <div class="dropdown-content-2">
+                                <a href="suppliers">Suppliers</a>
+                                <a href="#">New Order</a>
+                                <a href="#">Orders</a>
+                            </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown-2"><a class="dropbtn">Sales</a>
+                            <ul>
+                            <div class="dropdown-content-2">
+                                <a href="customers">Customers</a>
+                                <a href="Pedido.html">New Order</a>
+                                
+                            </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown-2"><a class="dropbtn">Inventory</a>
+                            <ul>
+                            <div class="dropdown-content-2">
+                                <a href="products">Products</a>
+                                <a href="warehouses">Warehouse</a>
+                            </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown-2"><a class="dropbtn" href="accounting.html">Accounting</a></li>
+                        <li class="dropdown-2"><a class="dropbtn" href="bills.html">Bills</a></li>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+        <h2 align="center"><font size="8" color="#088A85" face="Calibri"><b>NEW ORDER</b></font></h2>
+<form method="get" action="IntroducirPedido" name="pedidos">
+
+    <table cellspacing="1" cellpadding="1" border="0" align="center" width="80%" summary="">
+        <tbody>
+            <tr>
+                <td align="center"><font size="5" color="#04B4AE" face="Calibri"> Customer </font></td>
+                <td align="left"><input type="text" name="customer" size="30" /></td>
+            </tr>
+            <tr>
+                <td align="center"><font size="5" color="#04B4AE" face="Calibri"> Product </font></td>
+                <td align="left"><input type="text" name="product" size="20" /></td>
+            </tr>
+            <tr>
+                <td align="center"><font size="5" color="#04B4AE" face="Calibri"> Price </font></td>
+                <td align="left"><input type="text" name="price" size="20" /></td>
+            </tr>
+            <tr>
+                <td align="center"><font size="5" color="#04B4AE" face="Calibri"> Date </font></td>
+                <td align="left"><input type="date" name="date" size="20" /></td>
+            </tr>
+            <tr>
+            <td align="center" colspan="2"><button TYPE="submit"  value="Add">ADD NEW ORDER </button></td>
+            </tr>
+        </tbody>
+        
+           
+            
+    </table>
+</form>
+
+   <form action="MostrarCustomer" name="enseñar"><button style="position:absolute; top:500px; left:600px;" type="submit" value="add"> SEE ACTUAL ORDERS</button></form>
+        
+   
+        
+        
+    </body>
+</html>
+
+
+
+
+   
